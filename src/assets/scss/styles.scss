@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.font-roboto {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.box-shadow-about {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+}
