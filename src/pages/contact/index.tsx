@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
-import SOSFB from '../../assets/img/sos-fb.png';
-import SOSIG from '../../assets/img/sos-ig.png';
+// import SOSFB from '../../assets/img/sos-fb.png';
+// import SOSIG from '../../assets/img/sos-ig.png';
+import SOSPHONE from '../../assets/img/why_first.png';
 import SOSMAIL from '../../assets/img/sos-mail.png';
 import SEND from '../../assets/img/send.png';
 
@@ -66,17 +67,21 @@ const ContactPage: React.FC = () => {
                 <div className='w-[40%] pr-12'>
                     <h2 className="text-[30px] font-poppins font-semibold text-[#414141] leading-[45px] mb-6">Kontak Kami</h2>
                     <ul className="flex flex-col gap-4 space-y-2">
-                        <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
+                        {/* <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
                             <img src={SOSFB} alt="Facebook" className="mr-4" />
                             AMP Consulting
                         </li>
                         <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
                             <img src={SOSIG} alt="Instagram" className="mr-4" />
                             amp_consulting
+                        </li> */}
+                        <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
+                            <img src={SOSPHONE} alt="Phone" className="mr-4" />
+                            +62 812-9803-6123
                         </li>
                         <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
                             <img src={SOSMAIL} alt="Email" className="mr-4" />
-                            admin@ampconsulting.com
+                            charlie.thyawarta@ampconsulting.id
                         </li>
                     </ul>
                 </div>

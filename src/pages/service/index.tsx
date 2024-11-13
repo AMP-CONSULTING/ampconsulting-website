@@ -16,7 +16,7 @@ const ServicePage: React.FC = () => {
                 <h1 className='font-poppins font-semibold text-[36px] text-[#414141] mb-10 text-center'>Layanan Kami</h1>
                 <div className="flex flex-col justify-center items-center">
                     <div className="grid grid-cols-2 gap-6 mb-8">
-                        <div className="w-[349px] h-[130px] rounded-[20px] border border-[#BBBBBB] flex items-center justify-start gap-8 pl-8">
+                        {/* <div className="w-[349px] h-[130px] rounded-[20px] border border-[#BBBBBB] flex items-center justify-start gap-8 pl-8">
                             <div className='w-[65]'>
                                 <img src={Service1} alt='Service' />
                             </div>
@@ -30,7 +30,7 @@ const ServicePage: React.FC = () => {
                                     Chat Sekarang
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="w-[349px] h-[130px] rounded-[20px] border border-[#BBBBBB] flex items-center justify-start gap-8 pl-8">
                             <div className='w-[65]'>
                                 <img src={Service2} alt='Service' />

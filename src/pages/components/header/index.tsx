@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Logo from "../../../assets/img/logo.png";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
     const [activeMenu, setActiveMenu] = useState("");
@@ -26,7 +26,9 @@ const Header: React.FC = () => {
     return (
         <header className="bg-white h-[100px] flex items-center justify-between px-12">
             <div className="flex items-center">
-                <img src={Logo} alt="Logo" width="207" height="48" />
+                <Link to={"/"}>
+                    <img src={Logo} alt="Logo" width="207" height="48" />
+                </Link>
             </div>
             <nav className="flex items-center space-x-8">
                 {menuItems.map((item) => (
