@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-white">
             {/* Container untuk 3 row content */}
-            <div className="container mx-auto py-8 px-[7rem] grid grid-cols-1 md:grid-cols-3 gap-[8rem]">
+            <div className="container mx-auto md:py-8 md:px-[7rem] grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[8rem]">
                 {/* Lokasi */}
                 <div>
                     <h3 className="text-[24px] text-[#414141] font-semibold font-poppins mb-4 text-center">Lokasi</h3>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Company */}
-                <div className='pl-10'>
+                <div className='md:pl-10 text-center md:text-left'>
                     <h3 className="text-[24px] text-[#414141] font-semibold font-poppins mb-6">Company</h3>
                     <ul className="space-y-2">
                         <li className="text-[14px] text-[#9F9F9F] font-medium font-poppins cursor-pointer hover:text-[#787878]" onClick={() => navigate("/")}>- Beranda</li>
@@ -39,9 +39,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Kontak Kami */}
-                <div>
+                <div className='text-center md:text-left'>
                     <h3 className="text-[24px] text-[#414141] font-semibold font-poppins mb-6">Kontak Kami</h3>
-                    <ul className="flex flex-col gap-4 space-y-2">
+                    <ul className="flex flex-col gap-4 space-y-2 items-center md:items-start">
                         {/* <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
                             <img src={SOSFB} alt="Facebook" className="mr-4" />
                             AMP Consulting
@@ -63,10 +63,10 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Box di bawah row 3 content */}
-            <div className="w-full h-[80px] bg-white shadow-[0px_-2px_4px_0px_rgba(0,0,0,0.10)]">
+            <div className="w-full h-[80px] bg-white shadow-[0px_-2px_4px_0px_rgba(0,0,0,0.10)] mt-10 md:mt-0">
                 <div className='w-[85%] h-full mx-auto flex items-center justify-between'>
-                    <p className="text-[#414141] font-poppins">PT. ANUGERAH MITRA PERKASA CONSULTING</p>
-                    <p className='text-[12px] text-[#9F9F9F] font-medium font-poppins'>
+                    <p className="text-[#414141] font-poppins text-[13px] md:text-[16px]">PT. ANUGERAH MITRA PERKASA CONSULTING</p>
+                    <p className='text-[10px] md:text-[12px] text-[#9F9F9F] font-medium font-poppins'>
                         The VIDA Office Building, Lantai 5, Unit 5<br />
                         Jl. Raya Pejuangan No. 8, Jakarta Barat, Jakarta 11530
                     </p>

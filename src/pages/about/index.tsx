@@ -10,9 +10,9 @@ import Misi from '../../assets/img/misi.png';
 const AboutPage: React.FC = () => {
     return (
         <div className="font-poppins">
-            <section className="container mx-auto py-16 px-8">
-                <div className="flex justify-between items-center">
-                    <div className="w-1/2 flex items-end justify-end pr-[4rem]">
+            <section className="container mx-auto md:py-16 py-8 px-8">
+                <div className="md:flex md:justify-between md:items-center">
+                    <div className="hidden md:flex md:w-1/2 items-end justify-end md:pr-[4rem]">
                         <img
                             src={Why}
                             alt="Why Choose Us Image"
@@ -21,8 +21,8 @@ const AboutPage: React.FC = () => {
                             className="object-cover"
                         />
                     </div>
-                    <div className="w-1/2 pl-[2rem]">
-                        <h2 className="font-poppins text-[#414141] mb-5 text-[36px] font-semibold">
+                    <div className="md:w-1/2 md:pl-[2rem]">
+                        <h2 className="font-poppins text-[#414141] mb-5 text-[20px] text-center md:text-left md:text-[36px] font-semibold">
                             Mengapa Memilih Kami?
                         </h2>
                         <div className="mt-8 space-y-6">
@@ -95,13 +95,13 @@ const AboutPage: React.FC = () => {
                 </div>
             </section>
 
-            <section className="flex py-16 relative mb-3">
-                <div className="w-[50%] pl-[10rem] relative">
-                    <div className='absolute top-[3rem] right-[-15rem] bg-white box-shadow-about p-[40px]'>
-                        <h1 className="font-poppins text-[36px] font-semibold text-[#414141] mb-5">
+            <section className="md:flex md:py-16 relative mb-3">
+                <div className="md:w-[50%] md:pl-[10rem] relative">
+                    <div className='md:absolute md:top-[3rem] md:right-[-15rem] text-center md:text-left bg-white md:box-shadow-about p-[20px] md:p-[40px]'>
+                        <h1 className="font-poppins text-[24px] md:text-[36px] font-semibold text-[#414141] mb-5">
                             Tentang Kami
                         </h1>
-                        <p className="text-[13px] font-poppins text-[#9F9F9F] font-normal leading-[22px]">
+                        <p className="md:text-[13px] text-[11px] font-poppins text-[#9F9F9F] font-normal leading-[22px]">
                             <strong className='text-[#6C6C6C]'>PT ANUGERAH MITRA PERKASA CONSULTING</strong> adalah <br />
                             perusahaan konsultan pajak yang berbasis di Indonesia, <br />
                             yang berfokus pada penyediaan solusi perpajakan yang <br />
@@ -113,7 +113,7 @@ const AboutPage: React.FC = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] flex items-end justify-end">
+                <div className="hidden md:w-[50%] md:flex md:items-end md:justify-end">
                     <img
                         src={About}
                         alt="About Image"
@@ -124,9 +124,9 @@ const AboutPage: React.FC = () => {
                 </div>
             </section>
 
-            <section className="flex py-0 relative mb-12">
-                <div className="w-[50%] mx-auto relative">
-                    <div className='bg-white box-shadow-about p-[40px]'>
+            <section className="md:flex py-0 relative mb-12">
+                <div className="md:w-[50%] md:mx-auto md:relative">
+                    <div className='bg-white md:box-shadow-about p-[30px] md:p-[40px]'>
                         <p className="text-[13px] font-poppins text-[#9F9F9F] font-normal leading-[22px] mb-4">
                             <strong>Charlie Thyawarta</strong> adalah pendiri dan pimpinan <strong>PT Anugerah Mitra Perkasa Consulting</strong>,<br />
                             dengan lebih dari 18 tahun pengalaman di bidang perpajakan dan keuangan. Beliau telah<br />
@@ -147,8 +147,8 @@ const AboutPage: React.FC = () => {
                 </div>
             </section>
 
-            <section className="flex py-16 relative mb-12">
-                <div className="w-[50%] flex items-start justify-start">
+            <section className="md:flex md:py-16 relative mb-12">
+                <div className="hidden md:w-[50%] md:flex md:items-start md:justify-start">
                     <img
                         src={About2}
                         alt="About Image"
@@ -157,12 +157,12 @@ const AboutPage: React.FC = () => {
                         className="object-cover"
                     />
                 </div>
-                <div className="w-[50%] pl-[10rem] relative">
-                    <div className='absolute top-[3rem] left-[-15rem] bg-white box-shadow-about p-[40px]'>
-                        <h1 className="font-poppins text-[36px] font-semibold text-[#414141] mb-5">
+                <div className="md:w-[50%] md:pl-[10rem] relative">
+                    <div className='md:absolute md:top-[3rem] md:left-[-15rem] text-center md:text-left bg-white md:box-shadow-about p-[20px] md:p-[40px]'>
+                        <h1 className="font-poppins text-[24px] md:text-[36px] font-semibold text-[#414141] mb-5">
                             Visi
                         </h1>
-                        <p className="text-[13px] font-poppins text-[#9F9F9F] font-normal leading-[22px]">
+                        <p className="md:text-[13px] text-[11px] font-poppins text-[#9F9F9F] font-normal leading-[22px]">
                             Menjadi mitra terpercaya dalam penyediaan<br />
                             solusi perpajakan yang inovatif dan berkualitas,<br />
                             serta mendukung kepatuhan pajak yang optimal<br />
@@ -175,8 +175,8 @@ const AboutPage: React.FC = () => {
             </section>
 
             <section className="container mx-auto py-16 px-8">
-                <div className="flex justify-between items-center">
-                    <div className="w-1/2 flex items-end justify-end pr-[4rem]">
+                <div className="md:flex md:justify-between md:items-center">
+                    <div className="hidden md:w-1/2 md:flex items-end justify-end md:pr-[4rem]">
                         <img
                             src={Misi}
                             alt="Why Choose Us Image"
@@ -185,8 +185,8 @@ const AboutPage: React.FC = () => {
                             className="object-cover"
                         />
                     </div>
-                    <div className="w-1/2 pl-[2rem]">
-                        <h2 className="font-poppins text-[#414141] mb-5 text-[36px] font-semibold">
+                    <div className="md:w-1/2 md:pl-[2rem]">
+                        <h2 className="font-poppins text-[#414141] mb-5 text-[20px] text-center md:text-left md:text-[36px] font-semibold">
                             Misi
                         </h2>
                         <div className="mt-8 space-y-6">
@@ -294,8 +294,6 @@ const AboutPage: React.FC = () => {
                     />
                 </div>
             </section> */}
-
-
         </div>
     );
 };

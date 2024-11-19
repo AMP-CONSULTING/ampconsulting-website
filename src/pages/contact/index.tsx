@@ -62,11 +62,11 @@ const ContactPage: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center p-8">
-            <div className='flex gap-4 w-full max-w-[844px] bg-white py-[3rem] px-[4rem] border border-[#C3C3C3] rounded-[25px]'>
-                <div className='w-[40%] pr-12'>
-                    <h2 className="text-[30px] font-poppins font-semibold text-[#414141] leading-[45px] mb-6">Kontak Kami</h2>
-                    <ul className="flex flex-col gap-4 space-y-2">
+        <div className="md:min-h-screen flex items-center justify-center md:p-8">
+            <div className='md:flex md:gap-4 w-full md:max-w-[844px] bg-white md:py-[3rem] md:px-[4rem] md:border md:border-[#C3C3C3] md:rounded-[25px]'>
+                <div className='w-full md:w-[40%] md:pr-12'>
+                    <h2 className="text-[24px] md:text-[30px] text-center md:text-left font-poppins font-semibold text-[#414141] leading-[45px] mb-6">Kontak Kami</h2>
+                    <ul className="flex flex-col gap-2 md:gap-4 space-y-2 items-center md:items-start">
                         {/* <li className="flex items-center text-[14px] text-[#9F9F9F] font-medium font-poppins">
                             <img src={SOSFB} alt="Facebook" className="mr-4" />
                             AMP Consulting
@@ -85,7 +85,7 @@ const ContactPage: React.FC = () => {
                         </li>
                     </ul>
                 </div>
-                <form className="w-[60%] border-l pl-12" onSubmit={sendEmail}>
+                <form className="w-[80%] md:w-[60%] border-l md:pl-12 mx-auto md:mx-0 mt-6 md:mt-0" onSubmit={sendEmail}>
                     {/* Input Nama Anda */}
                     <div className="mb-4">
                         <label className="block text-black text-[11px] font-poppins font-medium leading-[35px] ml-1" htmlFor="name">
@@ -146,14 +146,14 @@ const ContactPage: React.FC = () => {
                     </div>
 
                     {/* Button Kirim */}
-                    <div className="flex items-center justify-end">
+                    <div className="flex items-center justify-end mb-12 md:mb-0">
                         <button
                             className="bg-[#414141] hover:bg-[#5B5B5B] text-white text-[13px] font-poppins font-semibold py-4 px-14 rounded-[10px] focus:outline-none focus:shadow-outline relative"
                             type="submit"
                             disabled={!captchaVerified} // Disable button jika captcha belum diverifikasi
                         >
                             <img src={SEND} alt='Send' className='absolute left-4 top-2' />
-                            <span className='block ml-3'>Kirim</span>
+                            <span className='block ml-3 text-[13px] md:text-[16px]'>Kirim</span>
                         </button>
                     </div>
                 </form>
