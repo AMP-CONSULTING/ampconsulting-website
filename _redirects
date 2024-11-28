@@ -3,3 +3,5 @@
 
 # Redirect with a query string
 /old-page?ref=abc    /new-page?ref=xyz    301
+
+/*    /index.html   200
