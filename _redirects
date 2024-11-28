@@ -1,0 +1,5 @@
+# Redirect from one URL to another
+/old-page    /new-page    301
+
+# Redirect with a query string
+/old-page?ref=abc    /new-page?ref=xyz    301
