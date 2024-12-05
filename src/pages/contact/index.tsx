@@ -40,14 +40,14 @@ const ContactPage: React.FC = () => {
 
         emailjs
             .send(
-                'YOUR_SERVICE_ID', // Ganti dengan EmailJS Service ID Anda
-                'YOUR_TEMPLATE_ID', // Ganti dengan Template ID Anda
+                'service_m9silgn', // Ganti dengan EmailJS Service ID Anda
+                'template_bd0vhp5', // Ganti dengan Template ID Anda
                 {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
                 },
-                'YOUR_USER_ID' // Ganti dengan User ID Anda dari EmailJS (Public Key)
+                'VgtCFNQZJjUkey04I' // Ganti dengan User ID Anda dari EmailJS (Public Key)
             )
             .then(
                 (result) => {
@@ -140,7 +140,7 @@ const ContactPage: React.FC = () => {
                     {/* reCAPTCHA */}
                     <div className="mb-6 flex items-center justify-end">
                         <ReCAPTCHA
-                            sitekey="YOUR_SITE_KEY" // Ganti dengan Site Key dari reCAPTCHA
+                            sitekey="6LeJyZIqAAAAAD6ir4G1AEh7ml8AQ97OskL8zfIH" // Ganti dengan Site Key dari reCAPTCHA
                             onChange={handleCaptcha}
                         />
                     </div>
