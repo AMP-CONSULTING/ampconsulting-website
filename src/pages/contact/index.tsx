@@ -140,7 +140,7 @@ const ContactPage: React.FC = () => {
                     {/* reCAPTCHA */}
                     <div className="mb-6 flex items-center justify-end">
                         <ReCAPTCHA
-                            sitekey="6LeJyZIqAAAAAD6ir4G1AEh7ml8AQ97OskL8zfIH" // Ganti dengan Site Key dari reCAPTCHA
+                            sitekey="6Lco8ZIqAAAAAIRHpowXVJ4knJLZsqne-uel4GiR" // Ganti dengan Site Key dari reCAPTCHA
                             onChange={handleCaptcha}
                         />
                     </div>
